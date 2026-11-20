@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grayline | Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-brand">
+
+            <div class="brand-logo">G</div>
+
+            <h1>GRAYLINE</h1>
+
+            <p>MANAGEMENT SYSTEM</p>
+
+            <div class="brand-description">
+                <h2>Manage your work.<br>Make it flow.</h2>
+
+                <p>
+                    A centralized workspace for employees,
+                    tasks, and inventory management.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="auth-content">
+
+            <div class="auth-card">
+
+                <h2>Welcome</h2>
+
+                <p class="muted">
+                    Sign in to access your workspace.
+                </p>
+
+                <div id="auth-message" class="notice hidden"></div>
+
+                <div class="auth-tabs">
+
+                    <button
+                        class="active"
+                        data-auth-tab="login"
+                        type="button"
+                    >
+                        Login
+                    </button>
+
+                    <button
+                        data-auth-tab="signup"
+                        type="button"
+                    >
+                        Sign Up
+                    </button>
+
+                </div>
+
+                <!-- Login Form -->
+
+                <form id="login-form">
+
+                    <div class="field">
+
+                        <label>Username</label>
+
+                        <input
+                            type="text"
+                            name="username"
+                            placeholder="Enter your username"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="field">
+
+                        <label>Password</label>
+
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                    </div>
+
+                    <button class="btn" type="submit">
+                        Sign In
+                    </button>
+
+                </form>
+
+                <!-- Signup Form -->
+
+                <form id="signup-form" class="hidden">
+
+                    <div class="field">
+
+                        <label>Username</label>
+
+                        <input
+                            type="text"
+                            name="username"
+                            required
+                            minlength="3"
+                        >
+
+                    </div>
+
+                    <div class="field">
+
+                        <label>Email</label>
+
+                        <input
+                            type="email"
+                            name="email"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="field">
+
+                        <label>Phone</label>
+
+                        <input
+                            type="text"
+                            name="phone"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="field">
+
+                        <label>Password</label>
+
+                        <input
+                            type="password"
+                            name="password"
+                            required
+                            minlength="6"
+                        >
+
+                    </div>
+
+                    <button class="btn" type="submit">
+                        Create Account
+                    </button>
+
+                </form>
+
+                <p class="auth-footer">
+                    Grayline Management System
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+    <script src="auth.js"></script>
+
+</body>
+
+</html>
