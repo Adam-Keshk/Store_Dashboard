@@ -1,5 +1,5 @@
 fastapi
 uvicorn[standard]
 PyJWT
-pwdlib[argon2]
-argon2-cffi
+pwdlib
+argon2-cffi==23.1.0
